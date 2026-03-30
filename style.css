@@ -1,5 +1,10 @@
 body {
   margin: 0;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+body.dark-mode {
+  background-color: black;
 }
 
 header {
