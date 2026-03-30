@@ -166,3 +166,27 @@ header {
     display: none;
   }
 }
+
+
+
+.header-line-image {
+  display: flex;
+  align-items: end;
+}
+.header-image {
+  height: calc(100vh / 2);
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+.headline {
+  position: absolute;
+  left: 25px;
+  /*
+    top: 300px;
+    */
+  color: white;
+  font-size: 70px;
+  width: 500px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
