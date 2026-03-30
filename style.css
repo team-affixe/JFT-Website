@@ -1,10 +1,10 @@
 body {
   margin: 0;
-  background-color: white;
+  background-color: aqua;
   font-family: Arial, sans-serif;
 }
 body.dark-mode {
-  background-color: black;
+  background-color: rgb(0, 0, 109);
 }
 
 header {

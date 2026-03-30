@@ -1,0 +1,11 @@
+{
+"lang": "de-DE",
+"name": "JFT Studios",
+"short_name": "JFT Studios",
+"theme_color": "#00006D",
+"background_color": "#00006D",
+"display": "standalone",
+"orientation": "any",
+"scope": "/",
+"start_url": "/index.html"
+}
