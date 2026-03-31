@@ -53,7 +53,7 @@
             <li>App-Entwicklung für iOS und Android</li>
             <li>Grafikdesign und Branding</li>
             <li>3D-Modellierung und Animation</li>
-            <li>Beratung und Projektmanagement</li>
+            <li>3D-Druck</li>
           </ul>
         </div>
         <div id="ContactBox" class="content-box">
@@ -66,13 +66,25 @@
           </p>
         </div>
         <!-- muss noch angepasst werden -->
-        <div class="content-box">
-          <h2 class="content-headline">Über uns</h2>
+        <div id="NewProjectBox" class="content-box">
+          <h2 class="content-headline">Projekt einreichen</h2>
           <p class="content-text">
-            Wir sind ein kreatives Studio, das sich auf die Entwicklung von
-            innovativen Projekten spezialisiert hat. Unser Team besteht aus
-            talentierten Designern, Entwicklern und Künstlern, die gemeinsam an
-            spannenden Projekten arbeiten.
+            Falls Sie ein spannendes Projekt haben, das Sie mit uns teilen
+            möchten, können Sie es gerne einreichen. Wir sind immer auf der
+            Suche nach neuen und innovativen Ideen, die wir gemeinsam umsetzen
+            können. Nutzen Sie unser Kontaktformular, um uns Ihr Projekt
+            vorzustellen, und wir werden uns so schnell wie möglich bei Ihnen
+            melden.
+          </p>
+        </div>
+        <div id="SignInBox" class="content-box SignIn">
+          <h2 class="content-headline">Anmelden</h2>
+          <p class="content-text">
+            Um Zugang zu exklusiven Inhalten und Funktionen zu erhalten, können
+            Sie sich bei uns anmelden. Erstellen Sie ein Konto, um Ihre Projekte
+            zu verwalten, an Diskussionen teilzunehmen und von unseren neuesten
+            Updates zu profitieren. Klicken Sie auf den Anmelden-Button, um
+            loszulegen!
           </p>
         </div>
       </div>
@@ -89,8 +101,10 @@
       />
 
       <div class="navigation">
-        <a class="menu-link this-site" onclick="ScrollToTop()">Home</a>
-        <a class="menu-link" onclick="ScrollToNewProject()">Neues Projekt</a>
+        <a class="menu-link" onclick="ScrollToTop()">Home</a>
+        <a class="menu-link" onclick="ScrollToNewProject()"
+          >Projekt einreichen</a
+        >
         <a class="menu-link" onclick="OpenImpressum()">Impressum</a>
         <a class="menu-link" onclick="ScrollToContact()">Kontakt</a>
         <a class="menu-link button" onclick="ScrollToSignIn()">Anmelden</a>
@@ -104,20 +118,24 @@
         <nav class="menu-links">
           <ul>
             <li>
-              <a onclick="ScrollToTop()"><i class="fas fa-home"></i> Startseite</a>
+              <a onclick="ScrollToTop()"
+                ><i class="fas fa-home"></i> Startseite</a
+              >
             </li>
             <li>
               <a onclick="ScrollToNewProject()"
-                ><i class="fas fa-folder-plus"></i> Neues Projekt</a
+                ><i class="fas fa-folder-plus"></i> Projekt einreichen</a
               >
             </li>
             <li>
               <a onclick="OpenImpressum()">
-                ><i class="fas fa-info-circle"></i> Impressum</a
+                <i class="fas fa-info-circle"></i> Impressum</a
               >
             </li>
             <li>
-              <a onclick="ScrollToContact()"><i class="fas fa-envelope"></i> Kontakt</a>
+              <a onclick="ScrollToContact()"
+                ><i class="fas fa-envelope"></i> Kontakt</a
+              >
             </li>
             <li>
               <a onclick="ScrollToSignIn()"
