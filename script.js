@@ -52,3 +52,6 @@ function ScrollToSignIn() {
 function OpenImpressum() {
   window.open("impressum.html", "_blank");
 }
+function menuToggle() {
+  document.getElementById('menuToggle').checked = false;
+}
