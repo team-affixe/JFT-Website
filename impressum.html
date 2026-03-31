@@ -1,11 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Impressum</title>
-</head>
-<body>
-    <h1>Impressum</h1>
-</body>
+    <style>
+      .impressum-background {
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.3);
+        position: fixed;
+      }
+      .impressum-content {
+        position: absolute;
+        margin: 20px;
+        color: white;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: black;
+        padding: 0px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="impressum-background" src="img/background.jpg" />
+    <div class="impressum-content">
+      <h1>Impressum</h1>
+      <p>Angaben gemäß § 5 TMG:</p>
+      <p>
+        JFT Studios<br />
+        Musterstraße 123<br />
+        12345 Musterstadt
+      </p>
+    </div>
+  </body>
 </html>
