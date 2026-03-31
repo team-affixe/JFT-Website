@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +17,11 @@
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="manifest" href="manifest.json" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.png" color="#5bbad5" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -51,7 +56,7 @@
             <li>Beratung und Projektmanagement</li>
           </ul>
         </div>
-        <div class="content-box">
+        <div id="ContactBox" class="content-box">
           <h2 class="content-headline">Kontaktieren Sie uns</h2>
           <p class="content-text">
             Haben Sie ein Projekt im Sinn oder möchten Sie mehr über unsere
@@ -75,17 +80,20 @@
 
     <!-- Page-Header mit Logo und Navigation -->
     <header>
-      <!-- Bild als Link zu index.html -->
-      <a href="index.html">
-        <img class="logo" src="/img/Logo.png" alt="Logo" />
-      </a>
+      <!-- Logo, zum Scrollen nach oben -->
+      <img
+        onclick="ScrollToTop()"
+        class="logo"
+        src="/img/Logo.png"
+        alt="Logo"
+      />
 
       <div class="navigation">
-        <a class="menu-link this-site" href="index.html">Home</a>
-        <a class="menu-link" href="new_file.html">Neues Projekt</a>
-        <a class="menu-link" href="impressum.html">Impressum</a>
-        <a class="menu-link" href="kontakt.html">Kontakt</a>
-        <a class="menu-link button" href="anmelden.html">Anmelden</a>
+        <a class="menu-link this-site" onclick="ScrollToTop()">Home</a>
+        <a class="menu-link" onclick="ScrollToNewProject()">Neues Projekt</a>
+        <a class="menu-link" onclick="OpenImpressum()">Impressum</a>
+        <a class="menu-link" onclick="ScrollToContact()">Kontakt</a>
+        <a class="menu-link button" onclick="ScrollToSignIn()">Anmelden</a>
         <input type="checkbox" id="menuToggle" hidden />
         <label for="menuToggle" class="menu-icon">
           <span></span>
@@ -96,23 +104,23 @@
         <nav class="menu-links">
           <ul>
             <li>
-              <a href="index.html"><i class="fas fa-home"></i> Startseite</a>
+              <a onclick="ScrollToTop()"><i class="fas fa-home"></i> Startseite</a>
             </li>
             <li>
-              <a href="new_file.html"
+              <a onclick="ScrollToNewProject()"
                 ><i class="fas fa-folder-plus"></i> Neues Projekt</a
               >
             </li>
             <li>
-              <a href="impressum.html"
+              <a onclick="OpenImpressum()">
                 ><i class="fas fa-info-circle"></i> Impressum</a
               >
             </li>
             <li>
-              <a href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a>
+              <a onclick="ScrollToContact()"><i class="fas fa-envelope"></i> Kontakt</a>
             </li>
             <li>
-              <a href="anmelden.html"
+              <a onclick="ScrollToSignIn()"
                 ><i class="fas fa-sign-in-alt"></i> Anmelden</a
               >
             </li>

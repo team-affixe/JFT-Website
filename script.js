@@ -18,3 +18,23 @@ window.matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
     document.querySelectorAll(".content-box").forEach(el => el.classList.remove("dark-mode"));
   }
 });
+
+function ScrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+function ScrollToNewProject() {
+alert("Diese Funktion ist noch nicht verfügbar.");
+}
+function ScrollToContact() {
+  const element = document.getElementById('ContactBox');
+element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function ScrollToSignIn() {
+alert("Diese Funktion ist noch nicht verfügbar.");
+}
+function OpenImpressum() {
+  window.open("impressum.html", "_blank");
+}

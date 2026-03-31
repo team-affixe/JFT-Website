@@ -37,6 +37,7 @@ header {
   height: auto;
   left: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 .logo:hover {
   transform: scale(1.1);
@@ -46,6 +47,7 @@ header {
   text-decoration: none;
   color: white;
   margin-left: 16px;
+  cursor: pointer;
 }
 .menu-link:hover {
   text-decoration: antiquewhite;
@@ -92,6 +94,7 @@ header {
   margin: 20px;
   z-index: 2;
   display: none;
+  right: 20px;
 }
 
 .menu-icon span {
