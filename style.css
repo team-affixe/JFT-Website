@@ -184,6 +184,7 @@ header {
   align-items: end;
 }
 .header-image {
+  position: relative;
   height: calc(100vh / 2);
   width: 100%;
   object-fit: cover;
@@ -203,6 +204,7 @@ header {
 }
 /* boxes for content */
 .content-box {
+  transition: transform 0.3s ease;
   background-color: white;
   color: black;
   padding: 20px;
@@ -210,9 +212,20 @@ header {
   border-radius: 20px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
 }
+
 .content-box.dark-mode {
   background-color: black;
   color: white;
+}
+.normal-content-box:hover {
+  transform: translateY(-5px);
+}
+ .new-project-box.zoom {
+  top: 70px;
+  bottom: 20px;
+  right: 1px;
+  left: 1px;
+  position: fixed;
 }
 .footer {
   margin: 0 20px;

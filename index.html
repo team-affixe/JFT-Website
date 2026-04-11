@@ -34,7 +34,7 @@
       <!-- der Inhalt der Seite -->
       <div class="content">
         <!-- eine Box der Seite -->
-        <div class="content-box">
+        <div class="content-box normal-content-box">
           <h2 class="content-headline">Willkommen bei den JFT Studios</h2>
           <p class="content-text">
             Wir sind ein kreatives Studio, das sich auf die Entwicklung von
@@ -46,7 +46,7 @@
           </p>
         </div>
         <!-- die zweite Box der Seite -->
-        <div class="content-box">
+        <div class="content-box normal-content-box">
           <h2 class="content-headline">Unsere Dienstleistungen</h2>
           <ul class="services-list">
             <li>Webdesign und Entwicklung</li>
@@ -56,17 +56,18 @@
             <li>3D-Druck</li>
           </ul>
         </div>
-        <div id="ContactBox" class="content-box">
+        <div id="ContactBox" class="content-box normal-content-box">
           <h2 class="content-headline">Kontaktieren Sie uns</h2>
           <p class="content-text">
             Haben Sie ein Projekt im Sinn oder möchten Sie mehr über unsere
             Dienstleistungen erfahren? Zögern Sie nicht, uns zu kontaktieren!
             Wir freuen uns darauf, von Ihnen zu hören und gemeinsam an Ihrem
-            nächsten großen Projekt zu arbeiten.
+            nächsten großen Projekt zu arbeiten. <br />
+            📞: 0123456789 <br />
+            📧: info@jft-studios.de
           </p>
         </div>
-        <!-- muss noch angepasst werden -->
-        <div id="NewProjectBox" class="content-box">
+        <div id="NewProjectBox" class="content-box new-project-box normal-content-box">
           <h2 class="content-headline">Projekt einreichen</h2>
           <p class="content-text">
             Falls Sie ein spannendes Projekt haben, das Sie mit uns teilen
@@ -76,8 +77,9 @@
             vorzustellen, und wir werden uns so schnell wie möglich bei Ihnen
             melden.
           </p>
+          <button id="ProjectContentBox" onclick="ProjectPopUp()">Projekt einreichen</button>
         </div>
-        <div id="SignInBox" class="content-box SignIn">
+        <div id="SignInBox" class="content-box SignIn normal-content-box">
           <h2 class="content-headline">Anmelden</h2>
           <p class="content-text">
             Um Zugang zu exklusiven Inhalten und Funktionen zu erhalten, können
@@ -89,8 +91,8 @@
         </div>
         <footer>
           <div class="content-box footer">
-          <p>&copy; 2026 JFT Studios. Alle Rechte vorbehalten.</p>
-          <a href="impressum.html">Impressum</a>
+            <p>&copy; 2026 JFT Studios. Alle Rechte vorbehalten.</p>
+            <a href="impressum.html">Impressum</a>
           </div>
         </footer>
       </div>
@@ -124,12 +126,12 @@
         <nav class="menu-links">
           <ul>
             <li>
-              <a onclick="ScrollToTop(), menuToggle()"
+              <a onclick="(ScrollToTop(), menuToggle())"
                 ><i class="fas fa-home"></i> Startseite</a
               >
             </li>
             <li>
-              <a onclick="ScrollToNewProject(), menuToggle()"
+              <a onclick="(ScrollToNewProject(), menuToggle())"
                 ><i class="fas fa-folder-plus"></i> Projekt einreichen</a
               >
             </li>
@@ -139,12 +141,12 @@
               >
             </li>
             <li>
-              <a onclick="ScrollToContact(), menuToggle()"
+              <a onclick="(ScrollToContact(), menuToggle())"
                 ><i class="fas fa-envelope"></i> Kontakt</a
               >
             </li>
             <li>
-              <a onclick="ScrollToSignIn(), menuToggle()"
+              <a onclick="(ScrollToSignIn(), menuToggle())"
                 ><i class="fas fa-sign-in-alt"></i> Anmelden</a
               >
             </li>
