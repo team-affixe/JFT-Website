@@ -242,3 +242,27 @@ header {
     left: 10px;
   }
 }
+.submit-btn {
+    background-color: #fafaff;
+    color: #1a1a1a;
+    /* padding: 12px 28px; */
+    border: 2px solid #d0d0d5;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.submit-btn:hover {
+    background-color: #ffffff;
+    border-color: #b8b8c0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
